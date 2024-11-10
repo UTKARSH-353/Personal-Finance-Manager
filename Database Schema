@@ -1,0 +1,22 @@
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    email VARCHAR(50) UNIQUE
+);
+
+CREATE TABLE transactions (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    type ENUM('Income', 'Expense'),
+    category VARCHAR(50),
+    amount DECIMAL(10, 2),
+    date DATE,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE budgets (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    amount DECIMAL(10, 2),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
