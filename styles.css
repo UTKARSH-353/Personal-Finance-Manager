@@ -1,0 +1,19 @@
+body {
+  background-color: #f4f7f6;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+#email-error,
+#password-error,
+#register-email-error,
+#register-password-error {
+  font-size: 0.9rem;
+}
+
+#logout-btn {
+  margin-top: 20px;
+}
