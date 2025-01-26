@@ -1,7 +1,18 @@
-PersonalFinanceManager
-├── src
-│   ├── com.finance.model       // For models (User, Transaction, Budget)
-│   ├── com.finance.dao         // For Data Access Objects (UserDAO, TransactionDAO)
-│   ├── com.finance.util        // For utilities (DatabaseConnection)
-│   └── com.finance.main        // For main application
-└── lib                       // For external libraries (MySQL Connector)
+- src/
+  - main/
+    - java/
+      - com/
+        - example/
+          - servlet/
+            - PersonalFinanceManagerServlet.java
+            - UserService.java
+            - UserDao.java
+          - model/
+            - User.java
+  - test/
+    - java/
+      - com/
+        - example/
+          - servlet/
+            - UserServiceTest.java
+            - UserDaoTest.java
